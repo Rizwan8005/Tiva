@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react'
-import Header from './utils/Header/Header'
  import "@fortawesome/fontawesome-free/css/all.css";
  import "aos/dist/aos.css";
-import Home from './pages/Home';
 import AOS from "aos";
+import MainRoutes from './routes/MainRoutes';
 
 const App = () => {
   useEffect(() => {
@@ -11,10 +10,9 @@ const App = () => {
   }, []);
   return (
     <div>
-    <Header />
-    <Home/>
+      <MainRoutes />
     </div>
-  )
+  );
 }
 
 export default App

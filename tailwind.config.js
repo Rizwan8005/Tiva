@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -25,12 +24,19 @@ module.exports = {
       colors: {
         primary: "#FF7A41",
         blue: "#0d6efd",
+        featureBgColor: "#F6FCFF",
         lightBlue: "#06f",
         mainWhite: "#ffffff",
         darkBlue: "#000F5C",
         gray: "#888",
         lightGray: "#555",
-        borderColor: "#e4e4e4",
+        borderColor: "#1C2850",
+        inputBorder: "#e3e1e1",
+        borderLight: "#fcf7f7",
+        footerColor: "#cccccc",
+        counterBg: "#666F9D",
+        iconsBColor: "#19276c",
+        shadowColor: "#00000090",
       },
       boxShadow: {
         "navbar-button": "0px 10px 50px rgba(0, 0, 0, 0.08)",
@@ -39,4 +45,3 @@ module.exports = {
   },
   plugins: [],
 };
-

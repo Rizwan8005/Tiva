@@ -6,9 +6,9 @@ import HeroImage from '../../assets/images/hero-image.png'
 const Hero = () => {
   return (
     <Layout>
-      <div className="px-8 xs:px-3 mt-12 md:mt-8 sm:mt-6">
-        <div className="flex items-center lg:flex-col">
-          <div className="w-1/2  lg:w-full lg:mb-7">
+      <div className="px-8 xs:px-3 md:mt-8 sm:mt-6">
+        <div className="flex items-center lg:flex-col mt-32 sm:mt-8">
+          <div className="w-1/2 lg:w-full lg:mb-7">
             <div className="flex items-center gap-3">
               <img src={HeroWave} alt="wave" />
               <p className="text-lightBlue font-semibold">BIG DATA ANALYTICS</p>
@@ -16,7 +16,7 @@ const Hero = () => {
             <h1 className="font-bold text-6xl pt-3 text-darkBlue lg:text-3xl sm:text-2xl xs:text-lg">
               Data Science And Analytics Solutions For Startup Agency
             </h1>
-            <p className="pt-8 text-lightGray leading-loose font-semibold max-w-[680px] mb-8 sm:text-sm md:pt-3">
+            <p className="pt-8 text-lightGray font-semibold max-w-[680px] mb-6 sm:text-sm md:pt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ectetur ullam corper mattis, pulvinar dapibus
               leo.

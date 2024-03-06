@@ -17,12 +17,19 @@ import {
 } from "@fortawesome/fontawesome-free-brands";
 import { Links } from "../../Data/NavbarLinks";
 import Layout from "../../layout/Layout";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [showTopDrawer, setShowTopDrawer] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
   const [form] = Form.useForm();
 
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true)
+    return () => (window.onscroll = null)
+  }
+console.log(isScrolled, "this is isScrolled");
   // handle drawer
   const showDrawer = () => {
     setOpen(true);
@@ -68,20 +75,26 @@ useEffect(() => {
 
   return (
     <Layout>
-      <div className="flex justify-between items-center lg:px-10 sm:px-3 shadow-navbar-button py-2">
+      <div
+        className={`flex justify-between items-center fixed w-full top-0 bg-mainWhite z-40 lg:px-10 sm:px-3 ${
+          isScrolled ? "shadow-navbar-button" : ""
+        } py-2`}
+      >
         <div className="pl-8 lg:pl-0">
           <img src={Logo} alt="logo" />
         </div>
         <div className="lg:hidden">
           <ul className="list-disc flex gap-9">
-            {Links.map((navItems) => {
+            {Links.map((navItem,i) => {
               return (
                 <li
                   className="text-darkBlue font-semibold flex items-center gap-2 list-none hover:text-primary"
-                  key={navItems.name}
+                  key={i}
                 >
-                  <p>{navItems.name}</p>
-                  <p className="text-xs">{navItems.icon}</p>
+                  <NavLink to={navItem.link}>
+                    {navItem.name}
+                  </NavLink>
+                  {/* <p className="text-xs">{navItems.icon}</p> */}
                 </li>
               );
             })}
@@ -248,15 +261,16 @@ useEffect(() => {
         >
           {/* Content for the top drawer */}
           <ul className="list-disc gap-9">
-            {Links.map((navItems) => {
+            {Links.map((navItem,i) => {
               return (
                 <li
                   className="text-darkBlue font-semibold list-none hover:text-primary gap-3"
-                  key={navItems.name}
+                  key={i}
                 >
-                  <div className="flex justify-between items-center border-t border-borderColor py-3">
-                    <p>{navItems.name}</p>
-                    <p className="text-xs">{navItems.icon}</p>
+                  <div className="border-t border-borderLight py-3">
+                    <NavLink to={navItem.link} onClick={() => setShowTopDrawer(false)}>
+                      {navItem.name}
+                    </NavLink>
                   </div>
                 </li>
               );
