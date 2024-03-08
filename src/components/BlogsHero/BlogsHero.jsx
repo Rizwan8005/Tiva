@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../layout/Layout';
 import AboutImg from "../../assets/images/about-image.png";
+import { Link } from 'react-router-dom';
 
 const BlogsHero = () => {
   return (
@@ -13,7 +14,8 @@ const BlogsHero = () => {
                 Blog Grid
               </h1>
               <p className="font-semibold text-lightGray cursor-pointer inline hover:text-darkBlue">
-                Home / <span className="text-primary">Blog Grid</span>
+                <Link to="/">Home</Link> /{" "}
+                <span className="text-primary">Blog Grid</span>
               </p>
             </div>
             <div className="w-1/2 sm:w-full sm:mt-5">

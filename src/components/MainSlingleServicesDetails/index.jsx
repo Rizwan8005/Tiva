@@ -1,0 +1,2 @@
+import MainSlingleServicesDetails from './MainSlingleServicesDetails'
+export default MainSlingleServicesDetails;

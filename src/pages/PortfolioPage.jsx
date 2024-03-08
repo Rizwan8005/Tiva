@@ -1,8 +1,9 @@
 import React from 'react'
+import MainPortfolio from '../components/MainPortfolio/MainPortfolio'
 
 const PortfolioPage = () => {
   return (
-    <div>PortfolioPage</div>
+    <div><MainPortfolio /></div>
   )
 }
 

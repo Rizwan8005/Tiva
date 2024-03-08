@@ -8,16 +8,19 @@ import PortfolioPage from "../pages/PortfolioPage";
 import AboutUsPage from "../pages/AboutUsPage";
 import BlogPage from "../pages/BlogPage";
 import ContactUsPage from "../pages/ContactUsPage";
-import { BeatLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
+import SinglePortfolioDetails from "../pages/SinglePortfolioDetails";
+import SingleServicesDetailPage from "../pages/SingleServicesDetailPage";
+import SingleBlogPage from '../pages/SingleBlogPage'
+import GoToTopPage from "../pages/GoToTopPage";
 
 const MainRoutes = () => {
 const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate loading time
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000); // Adjust the timeout as needed
+    }, 5000);
   }, []);
   return (
     <Router>
@@ -32,17 +35,31 @@ const [isLoading, setIsLoading] = useState(true)
             alignItems: "center",
           }}
         >
-          <BeatLoader loading={true} color="black" />
+          <HashLoader
+            loading={true}
+            color="#ff7a41"
+            css={`
+              display: block;
+              margin: 0 auto;
+            `}
+          />
         </div>
       ) : (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/about-us" element={<AboutUsPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/contact" element={<ContactUsPage />} />
-        </Routes>
+        <><Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/about-us" element={<AboutUsPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/contact" element={<ContactUsPage />} />
+            <Route
+              path="/services-detail/:id"
+              element={<SingleServicesDetailPage />} />
+            <Route
+              path="/portfolio-details/:id"
+              element={<SinglePortfolioDetails />} />
+            <Route path="/blog-details/:id" element={<SingleBlogPage />} />
+          </Routes><GoToTopPage /></>
       )}
       <Footer />
     </Router>

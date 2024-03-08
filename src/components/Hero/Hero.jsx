@@ -16,12 +16,12 @@ const Hero = () => {
             <h1 className="font-bold text-6xl pt-3 text-darkBlue lg:text-3xl sm:text-2xl xs:text-lg">
               Data Science And Analytics Solutions For Startup Agency
             </h1>
-            <p className="pt-8 text-lightGray font-semibold max-w-[680px] mb-6 sm:text-sm md:pt-3">
+            <p className="pt-8 text-lightGray font-semibold max-w-[680px] mb-6 sm:text-sm xs:text-xs md:pt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ectetur ullam corper mattis, pulvinar dapibus
               leo.
             </p>
-            <div className="text-mainWhite font-bold inline px-14 py-4 rounded-full bg-primary cursor-pointer hover:bg-darkBlue transition-all duration-300 transform hover:scale-110 lg:text-sm">
+            <div className="text-mainWhite font-bold inline px-14 py-4 rounded-full bg-primary cursor-pointer hover:bg-darkBlue transition-all duration-300 transform hover:scale-110 lg:text-sm sm:px-6 sm:py-3 sm:text-xs">
               Get Started
             </div>
           </div>

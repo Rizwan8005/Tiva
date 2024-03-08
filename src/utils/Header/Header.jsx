@@ -80,21 +80,20 @@ useEffect(() => {
           isScrolled ? "shadow-navbar-button" : ""
         } py-2`}
       >
-        <div className="pl-8 lg:pl-0">
-          <img src={Logo} alt="logo" />
-        </div>
+        <NavLink to="/">
+          <div className="pl-8 lg:pl-0">
+            <img src={Logo} alt="logo" />
+          </div>
+        </NavLink>
         <div className="lg:hidden">
           <ul className="list-disc flex gap-9">
-            {Links.map((navItem,i) => {
+            {Links.map((navItem, i) => {
               return (
                 <li
                   className="text-darkBlue font-semibold flex items-center gap-2 list-none hover:text-primary"
                   key={i}
                 >
-                  <NavLink to={navItem.link}>
-                    {navItem.name}
-                  </NavLink>
-                  {/* <p className="text-xs">{navItems.icon}</p> */}
+                  <NavLink to={navItem.link}>{navItem.name}</NavLink>
                 </li>
               );
             })}
@@ -218,6 +217,9 @@ useEffect(() => {
               </Form.Item>
               <Form.Item
                 name="phone"
+                rules={[
+                  { required: true, message: "Please enter your message" },
+                ]}
                 labelCol={{ span: 24 }}
                 wrapperCol={{ span: 24 }}
               >
@@ -226,6 +228,9 @@ useEffect(() => {
               <Form.Item
                 label="Message"
                 name="message"
+                rules={[
+                  { required: true, message: "Please enter your message" },
+                ]}
                 size="large"
                 labelCol={{ span: 24 }}
                 wrapperCol={{ span: 24 }}
@@ -261,14 +266,17 @@ useEffect(() => {
         >
           {/* Content for the top drawer */}
           <ul className="list-disc gap-9">
-            {Links.map((navItem,i) => {
+            {Links.map((navItem, i) => {
               return (
                 <li
                   className="text-darkBlue font-semibold list-none hover:text-primary gap-3"
                   key={i}
                 >
                   <div className="border-t border-borderLight py-3">
-                    <NavLink to={navItem.link} onClick={() => setShowTopDrawer(false)}>
+                    <NavLink
+                      to={navItem.link}
+                      onClick={() => setShowTopDrawer(false)}
+                    >
                       {navItem.name}
                     </NavLink>
                   </div>

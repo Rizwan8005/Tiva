@@ -29,29 +29,29 @@ const Footer = () => {
           </p>
           <div className="flex gap-2">
             <div className="flex gap-4 items-center mt-6">
-              <div className="w-10 h-10 object-cover flex justify-center items-center aspect-square rounded-full bg-iconsBColor">
+              <div className="w-10 h-10 object-cover flex justify-center items-center group aspect-square rounded-full bg-iconsBColor hover:bg-primary transition-all duration-300 transform hover:scale-110">
                 <FontAwesomeIcon
                   icon={faFacebookF}
-                  className="cursor-pointer text-primary text-lg"
+                  className="cursor-pointer text-primary text-lg group-hover:text-mainWhite"
                 />
               </div>
-              <div className="w-10 h-10 object-cover flex justify-center items-center aspect-square rounded-full bg-iconsBColor">
+              <div className="w-10 h-10 object-cover flex justify-center items-center group aspect-square rounded-full bg-iconsBColor hover:bg-primary transition-all duration-300 transform hover:scale-110">
                 <FontAwesomeIcon
                   icon={faTwitter}
-                  className="cursor-pointer text-primary text-lg"
+                  className="cursor-pointer text-primary text-lg group-hover:text-mainWhite"
                 />
               </div>
-              <div className="w-10 h-10 object-cover flex justify-center items-center aspect-square rounded-full bg-iconsBColor">
+              <div className="w-10 h-10 object-cover flex justify-center items-center group aspect-square rounded-full bg-iconsBColor hover:bg-primary transition-all duration-300 transform hover:scale-110">
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  className="cursor-pointer text-primary text-lg"
+                  className="cursor-pointer text-primary text-lg group-hover:text-mainWhite"
                 />
               </div>
 
-              <div className="w-10 h-10 object-cover flex justify-center items-center aspect-square rounded-full bg-iconsBColor">
+              <div className="w-10 h-10 object-cover flex justify-center items-center group aspect-square rounded-full bg-iconsBColor hover:bg-primary transition-all duration-300 transform hover:scale-110">
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  className="cursor-pointer text-primary text-lg"
+                  className="cursor-pointer text-primary text-lg group-hover:text-mainWhite"
                 />
               </div>
             </div>

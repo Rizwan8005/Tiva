@@ -3,6 +3,7 @@ import HeroWave from "../../assets/images/hero-wave.png";
 import { feature_data } from "../../Data/FeaturesData";
 // import Shape1 from '../../assets/images/shape-1.png'
 import Layout from "../../layout/Layout";
+import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
@@ -20,7 +21,7 @@ const Features = () => {
             {feature_data.map((feat, i) => {
               return (
                 <div
-                  className={` text-center shadow-navbar-button px-3 py-12 rounded-md hover:bg-featureBgColor ${
+                  className={` text-center shadow-navbar-button px-3 py-12 rounded-lg hover:bg-featureBgColor ${
                     feat.isBg ? "bg-featureBgColor" : ""
                   }`}
                   key={i}
@@ -33,12 +34,14 @@ const Features = () => {
                   <p className="pb-3 text-darkBlue font-bold hover:text-primary text-2xl transition-all duration-300 transform lg:text-lg">
                     {feat?.title}
                   </p>
-                  <p className="pb-3 text-lightGray font-semibold lg:text-sm">
+                  <p className="pb-3 text-lightGray font-semibold lg:text-sm xs:text-xs">
                     {feat?.desc}
                   </p>
-                  <span className="text-lightBlue hover:text-primary cursor-pointer font-bold transition-all duration-300 transform lg:text-sm">
-                    {feat?.viewBtn}
-                  </span>
+                  <Link to={`/services-detail/${feat.id}`}>
+                    <span className="text-lightBlue hover:text-primary cursor-pointer font-bold transition-all duration-300 transform lg:text-sm">
+                      {feat?.viewBtn}
+                    </span>
+                  </Link>
                 </div>
               );
             })}

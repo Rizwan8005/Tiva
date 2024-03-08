@@ -81,10 +81,10 @@ const Testimonial = () => {
                           </p>
                         </div>
                       </div>
-                      <p className="text-lightGray leading-loose max-w-[680px] pt-6 sm:text-sm">
+                      <p className="text-lightGray leading-loose max-w-[680px] pt-6 sm:pt-3 sm:text-sm xs:text-xs">
                         {testimonial.desc}
                       </p>
-                      <div className="pt-6">{testimonial.ratings}</div>
+                      <div className="pt-6 sm:pt-3">{testimonial.ratings}</div>
                     </div>
                   </SwiperSlide>
                 ))}

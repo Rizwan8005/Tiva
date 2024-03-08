@@ -2,6 +2,7 @@ import React from 'react'
 import HeroWave from "../../assets/images/hero-wave.png";
 import {services_data} from '../../Data/ServicesData'
 import Layout from '../../layout/Layout';
+import { Link } from 'react-router-dom';
 const OurServices = () => {
   return (
     <Layout>
@@ -37,12 +38,14 @@ const OurServices = () => {
                 <p className="pb-3 text-darkBlue font-bold hover:text-primary text-2xl transition-all duration-300 transform lg:text-base">
                   {service?.title}
                 </p>
-                <p className="pb-3 text-lightGray font-semibold lg:text-sm mb-3">
+                <p className="pb-3 text-lightGray font-semibold lg:text-sm xs:text-xs mb-3">
                   {service?.desc}
                 </p>
-                <div className="text-lightGray hover:bg-primary hover:text-mainWhite cursor-pointer border inline px-7 py-3 border-borderColor rounded-full font-bold transition-all duration-300 transform lg:text-sm hover:border-none">
-                  {service?.learnMore}
-                </div>
+                <Link to={`/services-detail/${service.id}`}>
+                  <div className="text-lightGray hover:bg-primary hover:text-mainWhite cursor-pointer border inline px-7 py-3 border-borderColor rounded-full font-bold transition-all duration-300 transform lg:text-sm hover:border-none">
+                    {service?.learnMore}
+                  </div>
+                </Link>
               </div>
             );
           })}

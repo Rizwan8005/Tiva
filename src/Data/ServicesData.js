@@ -6,6 +6,8 @@ import Services5 from "../assets/icons/service-5.svg";
 import Services6 from "../assets/icons/service-6.svg";
 import Services7 from "../assets/icons/service-7.svg";
 import Services8 from "../assets/icons/service-8.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/fontawesome-free-regular";
 
 export const services_data = [
   {
@@ -95,5 +97,33 @@ export const services_analytics = [
     title: "Cloud Automation",
     desc: "Lorem ipsum amet,conse adipiscing elit.Ut elit tellus,luctu ectetur ullam corper.",
     learnMore: "Learn More",
+  },
+];
+// machine learning data
+export const machine_learning_data = [
+  {
+    id: 1,
+    icon: <FontAwesomeIcon icon={faCheckCircle} />,
+    title: "Praesent risus pretium nec arcu in Mauris irot.",
+  },
+  {
+    id: 2,
+    icon: <FontAwesomeIcon icon={faCheckCircle} />,
+    title: "Integer at nibh eu ipsum scelerisque",
+  },
+  {
+    id: 3,
+    icon: <FontAwesomeIcon icon={faCheckCircle} />,
+    title: "Mauris pretium fringilla fermentum pretium",
+  },
+  {
+    id: 4,
+    icon: <FontAwesomeIcon icon={faCheckCircle} />,
+    title: "Duis semper justo quis vulputate",
+  },
+  {
+    id: 5,
+    icon: <FontAwesomeIcon icon={faCheckCircle} />,
+    title: "Sed venenatis elementum nisl tellus pretium dui.",
   },
 ];

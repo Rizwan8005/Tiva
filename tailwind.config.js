@@ -29,7 +29,7 @@ module.exports = {
         mainWhite: "#ffffff",
         darkBlue: "#000F5C",
         gray: "#888",
-        lightGray: "#555",
+        lightGray: "#555555",
         borderColor: "#1C2850",
         inputBorder: "#e3e1e1",
         borderLight: "#fcf7f7",
