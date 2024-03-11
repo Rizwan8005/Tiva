@@ -22,7 +22,7 @@ const Blogs = () => {
               <Link to={`/blog-details/${blog.id}`}>
                 <div
                 key={i}
-                className="shadow-navbar-button p-4 cursor-pointer sm:p-2"
+                className="shadow-navbar-button rounded-lg p-4 cursor-pointer sm:p-2"
                 data-aos="fade-right"
                 data-aos-delay={`${i * 200}`}
               >

@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from '../../assets/images/logo-4.png'
+import FooterLogo from "../../assets/images/footer-logo.png";
 import {
   faFacebookF,
   faTwitter,
@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/fontawesome-free-solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/fontawesome-free-solid";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,7 +21,13 @@ const Footer = () => {
       <div className="flex flex-wrap justify-between xs:flex-col border-t-[1px] py-6 border-borderColor">
         <div className="w-2/6 md:w-1/2 pr-10 md:pr-5 xs:pr-0 xs:w-full md:mb-5 xs:mb-2">
           <div className="mb-5">
-            <img className="w-[180px]" src={Logo} alt="Logo" />
+            <Link to='/'>
+              <img
+                src={FooterLogo}
+                alt="Logo"
+                className="w-[200px] md:w-150 sm:w-100 xs:w-40 cursor-pointer"
+              />
+            </Link>
           </div>
           <p className="text-sm text-footerColor leading-loose font-semibold">
             There are many variations of passages of Ipsum available, but the
@@ -89,25 +96,39 @@ const Footer = () => {
             Our Links
           </h3>
           <ul className="text-sm leading-10">
+            <Link to="/">
+              <li className="text-footerColor font-semiBold hover:text-primary">
+                <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
+                Home
+              </li>
+            </Link>
+            <Link to="/services">
+              <li className="text-footerColor font-semiBold hover:text-primary">
+                <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
+                Services
+              </li>
+            </Link>
+            <Link to="/portfolio">
+              <li className="text-footerColor font-semiBold hover:text-primary">
+                <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
+                Portfolio
+              </li>
+            </Link>
+            <Link to="/about-us">
+              <li className="text-footerColor font-semiBold hover:text-primary">
+                <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
+                About Us
+              </li>
+            </Link>
+            <Link to="/blog">
+              <li className="text-footerColor font-semiBold hover:text-primary">
+                <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
+                Blog
+              </li>
+            </Link>
             <li className="text-footerColor font-semiBold hover:text-primary">
               <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
-              <a href="/">Home</a>
-            </li>
-            <li className="text-footerColor font-semiBold hover:text-primary">
-              <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
-              <a href="/">Services</a>
-            </li>
-            <li className="text-footerColor font-semiBold hover:text-primary">
-              <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
-              <a href="/">About Us</a>
-            </li>
-            <li className="text-footerColor font-semiBold hover:text-primary">
-              <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
-              <a href="/">Our Team</a>
-            </li>
-            <li className="text-footerColor font-semiBold hover:text-primary">
-              <FontAwesomeIcon icon={faCheck} className="text-primary mr-2" />
-              <a href="/">Contact US</a>
+              <a href="/contact">Contact Us</a>
             </li>
           </ul>
         </div>

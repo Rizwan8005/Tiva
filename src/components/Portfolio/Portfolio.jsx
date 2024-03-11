@@ -26,7 +26,7 @@ const Portfolio = () => {
                     alt="portfolio"
                     className="rounded-lg duration-300"
                   />
-                  <div className="w-full h-full absolute opacity-0 hover:opacity-100 bg-shadowColor bg-opacity-80 rounded-lg p-4 text-center top-0 left-0 transition-opacity duration-300">
+                  <div className="w-full h-full absolute flex flex-col justify-end opacity-0 hover:opacity-100 bg-shadowColor bg-opacity-80 rounded-lg p-4 text-center top-0 left-0 transition-opacity duration-300">
                     <p className="text-xl font-semibold text-mainWhite">
                       {portfolio.name}
                     </p>

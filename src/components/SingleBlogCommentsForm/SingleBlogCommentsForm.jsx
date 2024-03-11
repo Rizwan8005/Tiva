@@ -21,7 +21,7 @@ const SingleBlogCommentsForm = () => {
   };
 
   return (
-    <div className="shadow-navbar-button px-12 py-10 sm:px-3 sm:py-8 md:mt-8 mt-10 mb-5">
+    <div className="shadow-navbar-button rounded-lg px-12 py-10 sm:px-3 sm:py-8 md:mt-8 mt-10 mb-5">
       <div className="text-3xl font-bold text-darkBlue pb-7 sm:text-lg sm:pb-4">
         Leave A Comment
       </div>

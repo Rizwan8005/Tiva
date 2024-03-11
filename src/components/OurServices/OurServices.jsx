@@ -19,7 +19,7 @@ const OurServices = () => {
           {services_data.map((service, i) => {
             return (
               <div
-                className="text-center shadow-navbar-button px-3 py-12 rounded-md bg-featureBgColor"
+                className="text-center shadow-navbar-button px-3 py-12 rounded-lg bg-featureBgColor"
                 data-aos="fade-right"
                 data-aos-delay={`${i * 200}`}
                 key={i}

@@ -29,7 +29,7 @@ const GoToTop = () => {
   return (
     <Layout>
       {isVisible && (
-        <div className="fixed bottom-10 right-10">
+        <div className="fixed bottom-10 z-20 right-10">
           <div
             className="animate-bounce w-10 h-10 bg-primary rounded-full text-mainWhite flex justify-center items-center cursor-pointer"
             onClick={GoToTopHandler}

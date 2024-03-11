@@ -11,17 +11,6 @@ import ClientsInfo from '../ClientsInfo/ClientsInfo';
 import Blogs from '../Blogs/Blogs';
 
 const MainHome = () => {
-  //  <div
-  //    style={{
-  //      height: "100vh",
-  //      display: "flex",
-  //      justifyContent: "center",
-  //      alignItems: "center",
-  //    }}
-  //  >
-  //    <BeatLoader loading={true} color="black" />
-  //    {/* <Spin /> */}
-  //  </div>;
   return (
     <div>
       <Hero />

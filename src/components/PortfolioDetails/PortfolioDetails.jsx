@@ -10,7 +10,7 @@ const PortfolioDetails = () => {
   return (
     <Layout>
       <div className="px-8 xs:px-3 md:mt-8 sm:mt-4">
-        <div className="flex justify-between lg:flex-col py-14 sm:py-3">
+        <div className="flex justify-between gap-4 lg:flex-col py-14 sm:py-3">
           <div className="w-[67%] lg:w-full">
             <div>
               <img src={Blog1} alt="blog" className="rounded-lg" />

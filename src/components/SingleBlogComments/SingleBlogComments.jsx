@@ -3,7 +3,7 @@ import { comments_data } from "../../Data/BlogsData";
 
 const SingleBlogComments = () => {
   return (
-    <div className="shadow-navbar-button px-12 py-10 sm:px-3 sm:py-4 md:mt-8 mt-10 mb-5">
+    <div className="shadow-navbar-button px-12 py-10 sm:px-3 sm:py-4 md:mt-8 mt-10 mb-5 rounded-lg">
       <div className="text-3xl font-bold text-darkBlue pb-7 sm:text-lg sm:pb-0">
         2 Comments
       </div>

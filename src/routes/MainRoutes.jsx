@@ -27,14 +27,7 @@ const [isLoading, setIsLoading] = useState(true)
       <Header />
       {isLoading ? (
         <div
-          className="flex justify-center items-center h-screen"
-          style={{
-            height: "100vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+          className="flex justify-center items-center h-screen">
           <HashLoader
             loading={true}
             color="#ff7a41"
@@ -45,7 +38,8 @@ const [isLoading, setIsLoading] = useState(true)
           />
         </div>
       ) : (
-        <><Routes>
+        <>
+         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
@@ -59,7 +53,8 @@ const [isLoading, setIsLoading] = useState(true)
               path="/portfolio-details/:id"
               element={<SinglePortfolioDetails />} />
             <Route path="/blog-details/:id" element={<SingleBlogPage />} />
-          </Routes><GoToTopPage /></>
+          </Routes><GoToTopPage />
+          </>
       )}
       <Footer />
     </Router>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../../assets/images/logo.png";
+import HeaderLogo from "../../assets/images/header-logo.png";
 import { Drawer, Form, Input } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -82,7 +83,11 @@ useEffect(() => {
       >
         <NavLink to="/">
           <div className="pl-8 lg:pl-0">
-            <img src={Logo} alt="logo" />
+            <img
+              src={HeaderLogo}
+              alt="logo"
+              className="w-[200px] md:w-150 sm:w-100 xs:w-40"
+            />
           </div>
         </NavLink>
         <div className="lg:hidden">
