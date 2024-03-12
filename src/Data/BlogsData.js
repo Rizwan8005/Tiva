@@ -119,13 +119,13 @@ export const comments_data = [
     userImg: User1,
     user_name: "Dominik Donovan",
     date: "16 June, 2022, 7:30pm",
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusaot m rem aperiam, eaque ipsa quae ab illo inventore veri.",
+    desc: "The data visualizations created by the team were incredibly helpful in understanding complex data trends.",
   },
   {
     id: 2,
     userImg: User2,
     user_name: "Maria A Quintero",
     date: "16 June, 2022, 7:30pm",
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusaot m rem aperiam, eaque ipsa quae ab illo inventore veri.",
+    desc: "Overall, our experience with the data science and analytics team was exceptional.",
   },
 ];

@@ -19,9 +19,11 @@ const OurExperties = () => {
               We are Expert in Data Science & Analytics
             </h1>
             <p className="pt-8 text-lightGray font-semibold max-w-[680px] mb-6 sm:mb-3 sm:text-sm xs:text-xs md:pt-3">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even.
+              As experts in data science and analytics, your organization likely
+              possesses advanced knowledge and skills in extracting insights
+              from data to drive business decisions and strategies. You are
+              proficient in using a variety of statistical and machine learning
+              techniques to analyze complex datasets.
             </p>
             <div className="sm:text-sm xs:text-xs text-darkBlue">
               <div className="flex items-center gap-2 mb-4">

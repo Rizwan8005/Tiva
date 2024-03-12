@@ -36,10 +36,10 @@ const Testimonial = () => {
   return (
     <Layout>
       <div className="bg-featureBgColor">
-        <div className="px-8 xs:px-3 mt-12 md:mt-8 sm:mt-6 py-20 md:py-10">
+        <div className="px-8 xs:px-3 py-20 md:py-10 sm:py-3">
           <div className="flex justify-center items-center gap-3">
             <img src={HeroWave} alt="wave" />
-            <p className="text-lightBlue font-semibold">Our Testimonial</p>
+            <p className="text-lightBlue font-semibold">OUR TESTIMONIAL</p>
           </div>
           <h1 className="text-center font-bold text-6xl pt-3 text-darkBlue lg:text-3xl sm:text-2xl xs:text-lg">
             Hear What Our Lovely
@@ -69,7 +69,7 @@ const Testimonial = () => {
                           <img
                             src={testimonial.user}
                             alt="user1"
-                            className="rounded-full object-cover"
+                            className="rounded-full object-cover w-[90px] h-[90px] xs:w-14 xs:h-14"
                           />
                         </div>
                         <div>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../../assets/images/logo.png";
 import HeaderLogo from "../../assets/images/header-logo.png";
 import { Drawer, Form, Input } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -127,7 +126,11 @@ useEffect(() => {
             title={
               <div className="flex justify-between items-center">
                 <div>
-                  <img src={Logo} alt="logo" className="cursor-pointer" />
+                  <img
+                    src={HeaderLogo}
+                    alt="logo"
+                    className="w-[200px] md:w-150 sm:w-100 xs:w-40 cursor-pointer"
+                  />
                 </div>
                 <div>
                   <FontAwesomeIcon
@@ -146,64 +149,68 @@ useEffect(() => {
               Contact Information
             </h3>
             <div>
-              <div className="flex items-center gap-2 text-lg pb-3">
-                <FontAwesomeIcon
-                  icon={faPhone}
-                  className="cursor-pointer text-primary"
-                />
-                <p className="text-darkBlue hover:text-primary">
-                  +990-123-4567
-                </p>
-              </div>
-              <div className="flex items-center gap-2 text-lg pb-3">
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  className="cursor-pointer text-primary"
-                />
-                <p className="text-darkBlue hover:text-primary">
-                  [email protected]
-                </p>
-              </div>
-              <div className="flex items-center gap-2 text-lg ">
+              <a href="tel:+11234567890">
+                <div className="flex items-center gap-2 text-lg pb-3">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    className="cursor-pointer text-primary"
+                  />
+                  <p className="text-darkBlue hover:text-primary">
+                    +990-123-4567
+                  </p>
+                </div>
+              </a>
+              <a href="mailto:ailogo@example.com">
+                <div className="flex items-center gap-2 text-lg pb-3">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="cursor-pointer text-primary"
+                  />
+                  <p className="text-darkBlue hover:text-primary cursor-pointer decoration-transparent">
+                    ailogo@example.com
+                  </p>
+                </div>
+              </a>
+              <div className="flex items-center gap-2 text-lg cursor-pointer">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="cursor-pointer text-primary"
                 />
-                <p className="text-darkBlue hover:text-primary">
+                <p className="text-darkBlue hover:text-primary cursor-pointer">
                   413 North Las Vegas, NV 89032
                 </p>
               </div>
             </div>
             <div className="flex gap-4 items-center mt-6">
-              <div className="w-10 h-10 object-cover flex justify-center items-center aspect-square rounded-full bg-gray hover:bg-darkBlue">
+              <div className="w-10 h-10 cursor-pointer object-cover flex justify-center items-center aspect-square rounded-full bg-gray hover:bg-darkBlue">
                 <FontAwesomeIcon
                   icon={faFacebookF}
-                  className="cursor-pointer text-mainWhite text-lg"
+                  className="text-mainWhite text-lg"
                 />
               </div>
-              <div className="w-10 h-10 object-cover flex justify-center items-center aspect-square rounded-full bg-gray hover:bg-darkBlue">
+              <div className="w-10 h-10 cursor-pointer object-cover flex justify-center items-center aspect-square rounded-full bg-gray hover:bg-darkBlue">
                 <FontAwesomeIcon
                   icon={faTwitter}
-                  className="cursor-pointer text-mainWhite text-lg"
+                  className="text-mainWhite text-lg"
                 />
               </div>
-              <div className="w-10 h-10 object-cover flex justify-center items-center aspect-square rounded-full bg-gray hover:bg-darkBlue">
+              <div className="w-10 h-10 cursor-pointer object-cover flex justify-center items-center aspect-square rounded-full bg-gray hover:bg-darkBlue">
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  className="cursor-pointer text-mainWhite text-lg"
+                  className="text-mainWhite text-lg"
                 />
               </div>
-              <div className="w-10 h-10 object-cover flex justify-center items-center aspect-square rounded-full bg-gray hover:bg-darkBlue">
+              <div className="w-10 h-10 cursor-pointer object-cover flex justify-center items-center aspect-square rounded-full bg-gray hover:bg-darkBlue">
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  className="cursor-pointer text-mainWhite text-lg"
+                  className="text-mainWhite text-lg"
                 />
               </div>
             </div>
             <h3 className="text-darkBlue text-xl font-bold mt-6 pb-4">
               Ready to Get Started?
             </h3>
-            <Form form={form}>
+            <Form form={form} className="flex flex-col gap-3">
               <Form.Item
                 name="name"
                 rules={[{ required: true, message: "Please enter your name" }]}
@@ -222,9 +229,7 @@ useEffect(() => {
               </Form.Item>
               <Form.Item
                 name="phone"
-                rules={[
-                  { required: true, message: "Please enter your message" },
-                ]}
+                rules={[{ required: true, message: "Please enter your phone" }]}
                 labelCol={{ span: 24 }}
                 wrapperCol={{ span: 24 }}
               >
@@ -245,7 +250,7 @@ useEffect(() => {
             </Form>
             <div
               onClick={handleSubmit}
-              className="bg-primary text-center text-mainWhite py-2 cursor-pointer font-bold rounded-md"
+              className="bg-primary mt-3 text-center text-mainWhite py-2 cursor-pointer font-bold rounded-md hover:bg-darkBlue transition-all duration-300"
             >
               Send Message
             </div>
@@ -255,7 +260,14 @@ useEffect(() => {
       <div className="lg:block hidden">
         <Drawer
           title={
-            <div className="text-end">
+            <div className="flex justify-between items-center">
+              <div>
+                <img
+                  src={HeaderLogo}
+                  alt="logo"
+                  className="w-[200px] md:w-150 sm:w-100 xs:w-40"
+                />
+              </div>
               <FontAwesomeIcon
                 icon={faTimes}
                 onClick={handleTopDrawerClose}

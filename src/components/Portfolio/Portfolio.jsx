@@ -10,7 +10,7 @@ const Portfolio = () => {
       <div className="px-8 xs:px-3 mt-12 md:mt-8 sm:mt-6 bg-featureBgColor py-20 md:py-10">
         <div className="flex justify-center items-center gap-3">
           <img src={HeroWave} alt="wave" />
-          <p className="text-lightBlue font-semibold">Our Portfolio</p>
+          <p className="text-lightBlue font-semibold">OUR PORTFOLIO</p>
         </div>
         <h1 className="text-center font-bold text-6xl pt-3 text-darkBlue lg:text-3xl sm:text-2xl xs:text-lg">
           We Ensure Data and Analytics

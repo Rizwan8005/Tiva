@@ -1,7 +1,6 @@
 import React from "react";
 import HeroWave from "../../assets/images/hero-wave.png";
 import { feature_data } from "../../Data/FeaturesData";
-// import Shape1 from '../../assets/images/shape-1.png'
 import Layout from "../../layout/Layout";
 import { Link } from "react-router-dom";
 

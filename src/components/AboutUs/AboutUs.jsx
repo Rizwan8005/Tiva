@@ -13,7 +13,7 @@ const AboutUs = () => {
           <div className="w-1/2 lg:w-full">
             <img src={About} alt="hero-img" data-aos="fade-up" />
           </div>
-          <div className="w-1/2 lg:w-full lg:mb-7">
+          <div className="w-1/2 lg:w-full lg:mb-7 mt-12">
             <div className="flex items-center gap-3">
               <img src={HeroWave} alt="wave" />
               <p className="text-lightBlue font-semibold">ABOUT US</p>
@@ -22,9 +22,15 @@ const AboutUs = () => {
               Focusing on Analysis, Techniques & Experience
             </h1>
             <p className="pt-8 text-lightGray leading-loose font-semibold max-w-[680px] mb-4 sm:text-sm xs:text-xs  md:pt-3">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even.
+              Focusing on analysis, techniques, and experience in the context of
+              a project or role typically means emphasizing the importance of
+              analytical skills, the use of specific techniques, and the depth
+              of practical experience in a particular field. We place a high
+              value on thorough analysis to understand the problem domain,
+              identify key requirements, and develop comprehensive solutions.
+              This involves using a variety of analytical techniques, such as
+              statistical analysis, data mining, and predictive modeling, to
+              extract meaningful insights from data.
             </p>
             <div className="sm:text-sm xs:text-xs">
               <div className="flex items-center gap-2 mb-4">
@@ -53,9 +59,9 @@ const AboutUs = () => {
                 <p className="text-darkBlue font-medium">Big data analysis.</p>
               </div>
             </div>
-            <div className="text-mainWhite font-bold inline px-14 py-4 rounded-full bg-primary cursor-pointer hover:bg-darkBlue transition-all duration-300 transform hover:scale-110 lg:text-sm sm:px-6 sm:py-3 sm:text-xs">
+            <button className="text-mainWhite font-bold inline px-14 py-4 rounded-full bg-primary cursor-pointer hover:bg-darkBlue transition-all duration-300 transform hover:scale-110 lg:text-sm sm:px-6 sm:py-3 sm:text-xs">
               Discover More
-            </div>
+            </button>
           </div>
         </div>
       </div>

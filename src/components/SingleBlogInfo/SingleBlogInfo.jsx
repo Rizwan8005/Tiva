@@ -25,22 +25,23 @@ const SingleBlogInfo = () => {
         </div>
       </div>
       <p className="pt-3 text-lightGray leading-loose font-semibold max-w-[680px] sm:text-sm xs:text-xs md:pt-3">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudan tiumt otam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dictasu nt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ration. Sed
-        ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        doloremque laudan tiumt otam rem aperiam, eaque ipsa quae ab illo
-        inventore veritatis et quasi architecto beatae vitae dictasu nt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.
+        Creative solutions can be transformative for businesses, offering
+        innovative ways to address challenges and seize opportunities. One
+        approach is product innovation, where businesses develop unique
+        offerings that meet customer needs in novel ways, setting them apart
+        from competitors. Process optimization is another area where creativity
+        can drive significant improvements, streamlining operations, reducing
+        costs, and boosting productivity. Creative marketing strategies can also
+        be powerful, helping businesses stand out in crowded markets and attract
+        attention from new customers.
       </p>
       <div className="shadow-navbar-button p-4 mt-6 Left-to-right rounded-s-lg  border-lightBlue border-l-4 mb-7">
         <p className=" text-lightGray leading-loose font-semibold max-w-[680px] sm:text-sm xs:text-xs">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque otam rem aperiam, eaque ipsa quae ab illo
-          inventore veritatis et quasi architecto beatae nt explicabo. Nemo enim
-          ipsam voluptatem quia voluptas sit
+          Working with the data science and analytics team was a game-changer
+          for our organization. Their business acumen and ability to translate
+          data insights into actionable strategies were invaluable. We highly
+          recommend their services to any organization looking to leverage data
+          for strategic decision-making.
           <p className="text-lightBlue pt-2">_Robert Brown</p>
         </p>
       </div>
@@ -48,11 +49,14 @@ const SingleBlogInfo = () => {
         How Ai Technology Work?
       </div>
       <p className=" text-lightGray leading-loose font-semibold max-w-[680px] sm:text-sm xs:text-xs">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudan tiumt otam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dictasu nt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ration.
+        AI technology works by simulating human intelligence processes such as
+        learning, reasoning, and problem-solving through the use of algorithms
+        and data. At its core, AI relies on data to learn patterns and make
+        decisions. Machine learning, a subset of AI, enables systems to improve
+        their performance on a task over time without being explicitly
+        programmed. Deep learning, a further subset of machine learning, uses
+        neural networks to mimic the way the human brain works, allowing AI
+        systems to learn from large amounts of data.
       </p>
       <div className="flex items-center gap-3 mt-6 sm:flex-col">
         <img
@@ -69,10 +73,11 @@ const SingleBlogInfo = () => {
         />
       </div>
       <p className=" text-lightGray leading-loose font-semibold max-w-[680px] sm:text-sm pt-5 xs:text-xs">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudan tiumt otam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dictasu nt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.
+        Natural language processing (NLP) is another key AI technology that
+        enables computers to understand, interpret, and generate human language.
+        By combining these technologies, AI systems can perform a wide range of
+        tasks, from recognizing speech and images to playing games and driving
+        cars.
       </p>
       <div className="mt-5 flex justify-between items-center md:flex-col md:justify-start md:items-start">
         <div className="flex gap-3 items-center md:pb-4 md:justify-start">

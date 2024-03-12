@@ -6,7 +6,7 @@ export const feature_data = [
     id: 1,
     FeatureImg: Feature1,
     title: "Data Analysis",
-    desc: "Lorem ipsum dolor sit amet,consec adipiscing elit.Ut elit tellus,luctus ectetur ullam corper mattis,pulvinar.",
+    desc: "Data analysis is the process of inspecting, cleaning, transforming, and modeling data with the goal of discovering useful information, and supporting decision-making. ",
     viewBtn: "View More",
   },
   {
@@ -14,14 +14,14 @@ export const feature_data = [
     FeatureImg: Feature2,
     isBg: true,
     title: "AI Solutions",
-    desc: "Lorem ipsum dolor sit amet,consec adipiscing elit.Ut elit tellus,luctus ectetur ullam corper mattis,pulvinar.",
+    desc: "AI solutions often involve the use of machine learning algorithms, which enable systems to learn from data and improve over time without being explicitly programmed.",
     viewBtn: "View More",
   },
   {
     id: 3,
     FeatureImg: Feature3,
     title: "Data Security",
-    desc: "Lorem ipsum dolor sit amet,consec adipiscing elit.Ut elit tellus,luctus ectetur ullam corper mattis,pulvinar.",
+    desc: "Data security refers to the practices and measures taken to protect data from unauthorized access, use, disclosure, disruption, modification, or destruction.",
     viewBtn: "View More",
   },
 ];

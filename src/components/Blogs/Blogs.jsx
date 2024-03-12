@@ -10,10 +10,10 @@ const Blogs = () => {
       <div className="px-8 xs:px-3 mt-12 md:mt-8 sm:mt-6 bg-featureBgColor py-20 md:py-10">
         <div className="flex justify-center items-center gap-3">
           <img src={HeroWave} alt="wave" />
-          <p className="text-lightBlue font-semibold">News & Blog</p>
+          <p className="text-lightBlue font-semibold">NEWS & BLOG</p>
         </div>
         <h1 className="text-center font-bold text-6xl pt-3 text-darkBlue lg:text-3xl sm:text-2xl xs:text-lg">
-          Stay Update with Tiva From
+          Stay Update with Ai Company From
           <br /> Latest & Popular News
         </h1>
         <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 mt-12 md:mt-7 gap-5">

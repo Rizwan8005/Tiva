@@ -28,3 +28,9 @@ border-bottom: none !important;
 .active {
   color: #FF7A41;
 }
+.ant-drawer-header{
+    padding: 16px 10px !important;
+}
+.ant-drawer-body{
+  padding: 16px !important;
+}

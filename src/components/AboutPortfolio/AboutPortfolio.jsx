@@ -11,15 +11,16 @@ const AboutPortfolio = () => {
         About The Project
       </p>
       <p className="pt-6 text-lightGray leading-loose font-semibold max-w-[680px] mb-6 sm:mb-3 sm:pt-3 sm:text-sm xs:text-xs md:pt-3">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudan tiumt otam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dictasu nt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ration. Sed
-        ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        doloremque laudan tiumt otam rem aperiam, eaque ipsa quae ab illo
-        inventore veritatis et quasi architecto beatae vitae dictasu nt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.
+        The project aims to develop a comprehensive data analytics platform for
+        a retail company to optimize their operations, improve customer
+        experience, and increase sales. The platform will leverage data from
+        various sources, including sales transactions, customer interactions,
+        inventory levels, and external market data, to provide actionable
+        insights and recommendations to key stakeholders. Analyze sales data to
+        identify trends, patterns, and opportunities for improving sales
+        performance. This includes analyzing customer purchase behavior,
+        identifying cross-selling and upselling opportunities, and optimizing
+        pricing strategies.
       </p>
       <div>
         <div className="flex items-center gap-3 lg:flex-col">
@@ -39,32 +40,35 @@ const AboutPortfolio = () => {
         </div>
         <div>
           <p className=" text-lightGray leading-loose font-semibold max-w-[680px] mb-3 xs:mb-2 sm:text-sm xs:text-xs">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudan tiumt otam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dictasu nt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ration.
+            To ensure the success of your project, start by clearly defining
+            your goals and objectives. This will help you stay focused and
+            ensure that your efforts are aligned with the desired outcomes.
+            Next, create a detailed project plan that outlines the scope,
+            timeline, resources, and deliverables. Planning thoroughly will help
+            you stay organized and on track throughout the project.
+            Communication is key, so keep all stakeholders informed of progress,
+            issues, and changes to ensure everyone is on the same page. Identify
+            potential risks to your project and develop a plan to mitigate them.
           </p>
           <ul className="text-sm sm:text-xs leading-10 sm:leading-7">
             <li className="text-lightGray">
               <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-2" />
               <span className="font-semibold">
-                Fusce justo risus placerat in risus eget tincidunt consequat
-                elit
+                Communication is key to a successful project.
               </span>
             </li>
             <li className="text-lightGray">
               <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-2" />
               <span className="font-semibold">
-                Nunc fermentum sem sit amet dolor laoreet placerat.
+                Identify potential risks to your project and develop a plan to
+                mitigate them.
               </span>
             </li>
             <li className="text-lightGray">
               <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-2" />
               <span className="font-semibold">
-                Integer quis lorem est uspendisse eu augue porta ullamcorper
-                dictum.
+                Regularly monitor and track the progress of your project against
+                the plan.
               </span>
             </li>
           </ul>
@@ -74,16 +78,19 @@ const AboutPortfolio = () => {
         </div>
         <div>
           <p className=" text-lightGray leading-loose font-semibold max-w-[680px] sm:text-sm xs:text-xs">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudan tiumt otam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dictasu nt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ration. Sed ut perspiciatis unde omnis iste natus error sit
-            voluptatem accusantium doloremque laudan tiumt otam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto
-            beatae vitae dictasu nt explicabo. Nemo enim ipsam voluptatem quia
-            voluptas sit aspernatur aut.
+            The project aims to develop an innovative solution for optimizing
+            energy usage in smart homes. The goal is to leverage data analytics
+            and smart technologies to help homeowners reduce their energy
+            consumption, lower costs, and minimize their environmental impact.
+            However, the project faces several challenges, including the
+            complexity of integrating various smart devices and systems,
+            ensuring data security and privacy, and educating users about the
+            benefits of energy optimization. Overcoming these challenges will
+            require a multidisciplinary approach, involving expertise in data
+            analytics, IoT technologies, and user experience design. The project
+            team is committed to addressing these challenges and delivering a
+            successful solution that benefits both homeowners and the
+            environment.
           </p>
         </div>
       </div>

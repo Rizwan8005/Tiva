@@ -13,6 +13,8 @@ import SinglePortfolioDetails from "../pages/SinglePortfolioDetails";
 import SingleServicesDetailPage from "../pages/SingleServicesDetailPage";
 import SingleBlogPage from '../pages/SingleBlogPage'
 import GoToTopPage from "../pages/GoToTopPage";
+import PrivacyPolicyPage from "../pages/PrivacyPolicyPage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 const MainRoutes = () => {
 const [isLoading, setIsLoading] = useState(true)
@@ -26,8 +28,7 @@ const [isLoading, setIsLoading] = useState(true)
     <Router>
       <Header />
       {isLoading ? (
-        <div
-          className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-screen">
           <HashLoader
             loading={true}
             color="#ff7a41"
@@ -39,22 +40,27 @@ const [isLoading, setIsLoading] = useState(true)
         </div>
       ) : (
         <>
-         <Routes>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/contact" element={<ContactUsPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route
               path="/services-detail/:id"
-              element={<SingleServicesDetailPage />} />
+              element={<SingleServicesDetailPage />}
+            />
             <Route
               path="/portfolio-details/:id"
-              element={<SinglePortfolioDetails />} />
+              element={<SinglePortfolioDetails />}
+            />
             <Route path="/blog-details/:id" element={<SingleBlogPage />} />
-          </Routes><GoToTopPage />
-          </>
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+          <GoToTopPage />
+        </>
       )}
       <Footer />
     </Router>
